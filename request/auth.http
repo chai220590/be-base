@@ -1,0 +1,24 @@
+@baseUrl=http://localhost:3333
+
+### Đăng ký tài khoản
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"demo01",
+    "password":"123"
+}
+
+### Đăng nhập
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"demo01",
+    "password":"123"
+}
+
+### Say hi
+GET  {{baseUrl}}/api/hello
+Content-Type: application/json
+Authorization: 
